@@ -1,7 +1,7 @@
 delivery_report =["um-deliveries-day-1.txt","um-deliveries-day-2.txt","um-deliveries-day-3.txt"]
 def delivery_msg(day, filename):
         print(f"Day {day}")
-        the_file = open("/Users/minnujohn/src/homework/melon-delivery-report/"+filename)
+        the_file = open(filename)
         for line in the_file:
             line = line.rstrip()
             words = line.split('|')
